@@ -29,6 +29,7 @@ for account in accounts:
         print(f"User login for {account['username']}: SUCCESS")
         continue
     print(f"User login for {account['username']}: FAILED")
+    time.sleep(1)
 
 print(f"Total logged in: {len(tokens)}/{len(accounts)}")
 
